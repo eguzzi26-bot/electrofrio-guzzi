@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrofrio Guzzi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <a href="tel:+541161606769"><i class="fas fa-phone"></i> 1161606769</a>
+    <a href="https://wa.me/5491161606769" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">Electrofrio Guzzi</div>
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Quiénes Somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#zona">Zona</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- HERO BANNER -->
+<section class="hero" id="inicio">
+    <div class="hero-text">
+        <h1>Especialistas en Heladeras, Aires y Celulares</h1>
+        <p>Servicio técnico profesional con garantía y excelencia</p>
+    </div>
+    <div class="hero-img">
+        <img src="ChatGPT Image 7 feb 2026, 16_08_49.png" alt="Banner Electrofrio Guzzi">
+    </div>
+</section>
+
+<!-- QUIÉNES SOMOS -->
+<section class="quienes-somos scroll-reveal" id="nosotros">
+    <h2>Estamos especializados en reparación</h2>
+    <p>
+        Especialistas en reparación de heladeras, aires acondicionados y celulares.<br>
+        <span class="nota">No realizamos venta de repuestos.</span><br>
+        Nuestro equipo está formado por profesionales con experiencia, utilizando herramientas de alta calidad que garantizan resultados duraderos y seguros.  
+        Nos destacamos por profesionalismo, eficiencia y atención personalizada.
+    </p>
+</section>
+
+<!-- SERVICIOS -->
+<section class="servicios scroll-reveal" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="cards">
+        <div class="card"><i class="fas fa-snowflake"></i><span>Heladeras</span></div>
+        <div class="card"><i class="fas fa-fan"></i><span>Aires Acondicionados</span></div>
+        <div class="card"><i class="fas fa-mobile-alt"></i><span>Celulares</span></div>
+    </div>
+</section>
+
+<!-- MARCAS -->
+<section class="marcas scroll-reveal" id="marcas">
+    <h2>Marcas que reparamos</h2>
+    <div class="marcas-list">
+        <span>Electrolux</span>
+        <span>LG</span>
+        <span>Samsung</span>
+        <span>Whirlpool</span>
+        <span>BGH</span>
+        <span>Ariston</span>
+        <span>Philco</span>
+        <span>Candy</span>
+        <span>Drean</span>
+        <span>Gafa</span>
+        <span>General Electric</span>
+        <span>Patrick</span>
+        <span>Y todas las marcas de celulares menos iPhone</span>
+    </div>
+</section>
+
+<!-- ZONA DE COBERTURA -->
+<section class="zona scroll-reveal" id="zona">
+    <h2>Zonas de cobertura</h2>
+    <p>
+        Ciudad Autónoma de Buenos Aires y GBA Sur: Adrogué, Avellaneda, Banfield, Berazategui, Bernal, Burzaco, Canning, Ezeiza, Ezpeleta, Florencio Varela, Hudson, Lanús, Lomas de Zamora, Luis Guillón, Monte Grande, Quilmes, Remedios de Escalada, San Francisco Solano, Sarandí, Wilde
+    </p>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto scroll-reveal" id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: eguzzi26@gmail.com</p>
+    <p>Teléfono: 1161606769</p>
+    <p>WhatsApp: <a href="https://wa.me/5491161606769" target="_blank">Click aquí</a></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Electrofrio Guzzi</p>
+</footer>
+
+<!-- BOTÓN WHATSAPP FLOTANTE -->
+<a href="https://wa.me/5491161606769" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- BOTÓN TELÉFONO FLOTANTE -->
+<a href="tel:+541161606769" class="telefono-float">
+    <i class="fas fa-phone"></i>
+</a>
+
+<script>
+// Animaciones al hacer scroll
+const scrollElements = document.querySelectorAll(".scroll-reveal");
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+  return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+};
+const displayScrollElement = (element) => element.classList.add("scrolled");
+const handleScrollAnimation = () => {
+  scrollElements.forEach(el => {
+    if (elementInView(el, 1.25)) displayScrollElement(el);
+  });
+};
+window.addEventListener("scroll", handleScrollAnimation);
+window.addEventListener("load", handleScrollAnimation);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+color:#333;
+scroll-behavior:smooth;
+}
+
+a{text-decoration:none;color:inherit;}
+
+/* TOP BAR */
+.top-bar{
+background:#007bff;
+color:white;
+display:flex;
+justify-content:flex-end;
+padding:8px 20px;
+gap:20px;
+font-size:14px;
+position:fixed;
+width:100%;
+top:0;
+z-index:999;
+}
+.top-bar a{color:white;}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:20px 40px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+position:sticky;
+top:35px;
+z-index:998;
+}
+.logo{font-size:24px;color:#007bff;font-weight:bold;}
+header nav a{margin-left:20px;font-weight:bold;color:#333;}
+
+/* HERO IMG */
+.hero{
+width:100%;
+display:flex;
+justify-content:center;
+margin-bottom:50px;
+position:relative;
+flex-direction: column;
+align-items: center;
+}
+
+.hero-text{
+position:relative; 
+top:0;
+width:100%;
+text-align:center;
+z-index:2;
+}
+
+.hero-text h1{
+font-size:42px;
+color:#007bff;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:22px;
+color:#333;
+}
+
+/* Imagen extendida a los costados y más abajo */
+.hero-img img{
+width:100vw;       /* cubre todo el ancho de la pantalla */
+max-height:500px;   /* altura máxima */
+object-fit:cover;
+margin-top:50px;    /* baja la imagen debajo del texto */
+border-radius:0;    /* quitar redondeado para que cubra totalmente */
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* SECCIONES */
+.quienes-somos,.servicios,.marcas,.zona,.contacto{
+text-align:center;padding:50px 20px;opacity:0;transform:translateY(40px);transition:all 1s ease;
+}
+.quienes-somos.scrolled,.servicios.scrolled,.marcas.scrolled,.zona.scrolled,.contacto.scrolled{
+opacity:1;transform:translateY(0);
+}
+.quienes-somos h2,.servicios h2,.marcas h2,.zona h2,.contacto h2{color:#007bff;margin-bottom:20px;}
+.quienes-somos p,.marcas p,.zona p,.contacto p{font-size:16px;max-width:800px;margin:0 auto;line-height:1.6;}
+.nota{color:#f1c40f;font-weight:bold;}
+
+/* CARDS SERVICIOS */
+.cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.card{background:white;padding:25px;width:250px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1);font-weight:bold;transition:0.3s;cursor:pointer;}
+.card i{font-size:40px;margin-bottom:10px;color:#007bff;display:block;}
+.card span{display:block;margin-top:5px;}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+
+/* MARCAS */
+.marcas-list{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;margin-top:20px;}
+.marcas-list span{background:#eee;padding:8px 12px;border-radius:5px;font-size:14px;}
+
+/* FOOTER */
+footer{background:#0a3d62;color:white;text-align:center;padding:20px;}
+
+/* BOTONES FLOTANTES */
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+border-radius:50%;
+padding:15px 20px;
+font-size:24px;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:transform 0.3s;
+}
+.whatsapp-float:hover{transform:scale(1.1);}
+
+.telefono-float{
+position:fixed;
+bottom:100px;
+right:25px;
+background:#007bff;
+color:white;
+border-radius:50%;
+padding:15px 20px;
+font-size:24px;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:transform 0.3s;
+}
+.telefono-float:hover{transform:scale(1.1);}
